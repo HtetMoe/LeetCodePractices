@@ -1,0 +1,52 @@
+Array vs ArrayList
+=> Array     : Fixed size, can store both primitives and objects, faster but less flexible.
+=> ArrayList : Dynamic size, stores objects only, more flexible with built-in methods,
+   but slightly slower.
+
+-------------
+ArrayList vs HashSet
+=> ArrayList :  Ordered, allows duplicates, slower for contains() operation,
+   because it requires linear search but allows indexed access.
+
+=> Unordered, no duplicates allowed, faster contains() and add(),
+   no indexed access (the elements are not stored in a specific order).
+
+--------------
+HashSet vs HashMap
+=> HashSet : use this when you only care about the uniqueness of elements.
+   - HashSet allows one null value.
+
+=> HashMap : use this when you need to associate keys with values.
+   - HashMap does not allow duplicate keys. However, the values can be duplicated.
+   - HashMap allows one null key and multiple null values.
+
+--------------
+HashMap vs HashTable
+=> HashMap   : not synchronized, meaning it is not thread-safe
+   - generally faster than Hashtable because it is unsynchronized.
+   - HashMap allows one null key and multiple null values.
+   - Usage : preferred for new code, especially in single-threaded contexts
+
+=> HashTable : synchronized, meaning it is thread-safe.
+   - does not allow any null keys or null values.
+   - Multiple threads can safely access it without external synchronization.
+   - Because it is synchronized, Hashtable is generally slower than HashMap.
+   - Usage : typically used in legacy code where thread safety is required
+
+
+--------------
+TreeMap
+=> A TreeMap is a map that maintains its keys in a sorted order, providing efficient and
+   ordered key-value storage. It’s not synchronized and does not allow null keys,
+   but it is a powerful tool when you need to store data in a specific order or perform range queries.
+
+-----------------
+TreeSet
+=> A TreeSet in Java is a collection that stores unique elements in a sorted order.
+ It does not allow null values and provides log-time performance for basic operations
+ like add, remove, and search, using a Red-Black Tree for its underlying implementation.
+
+
+
+
+

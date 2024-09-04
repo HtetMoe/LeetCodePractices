@@ -1,0 +1,32 @@
+format => window + alt + L
+run    => ctrl + shift + R
+
+What's big O?
+=> is a powerful tool used in computer science to describe the time/space complexity of algorithms.
+
+What's space complexity?
+=> total space taken by the algorithm.
+=> includes both auxiliary space(temporary space used by algorithm) and space used by input.
+
+What's hashSet?
+=> a collections framework, used to store a collection of unique elements.
+
+What's static?
+=> A method declared as static can be called without creating an instance of the class.
+=> static methods can only access only static variables and other static methods directly.
+=> Usage : utility or helper methods
+
+What's the diff between int and Integer?
+=> int( primitive type, default = 0)
+=> Integer ( Wrapper class, Object type, default = null)
+=> Java allows automatic conversion (known as autoboxing and unboxing)
+
+
+
+
+
+
+
+
+
+
